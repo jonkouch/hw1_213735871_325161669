@@ -1,6 +1,14 @@
 from math import sqrt
 
 
+def sum(values):
+    sum_values=0
+    for value in values:
+        sum+=value
+
+    return sum_values
+
+
 def calc_mean(values):
     mean = sum(values)/len(values)
     return mean
@@ -24,8 +32,3 @@ def calc_covariance(values1, values2):
     n=min(len(values1), len(values2))
 
     return sum((x - mean1) * (y-mean2) for x,y in zip(values1, values2)) / n
-
-
-def population_statistics(feature_description, data, treatment, target, threshold, is_above,
-                          statistic_functions):
-
