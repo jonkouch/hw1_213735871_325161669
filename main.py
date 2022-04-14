@@ -11,7 +11,14 @@ def q2(dict):
     statistics.population_statistics("Winter Holiday records", data1,
                                      "t1", "cnt", 13, False,
                                      [statistics.calc_mean, statistics.calc_stdv])
-
+    statistics.population_statistics("Winter weekday records:", data2, "t1", "cnt", 13, False,
+                                     [statistics.calc_mean, statistics.calc_stdv])
+    print("If t1>13.0, then:")
+    statistics.population_statistics("Winter Holiday records", data1,
+                                     "t1", "cnt", 13, True,
+                                     [statistics.calc_mean, statistics.calc_stdv])
+    statistics.population_statistics("Winter weekday records:", data2, "t1", "cnt", 13, True,
+                                     [statistics.calc_mean, statistics.calc_stdv])
 
 
 def q1(dict):

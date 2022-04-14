@@ -37,8 +37,8 @@ def population_statistics(feature_description, data, treatment, target,
     print(f"{target}: ", end='')
     for i, func in enumerate(statistic_functions):
         if i < len(statistic_functions)-1:
-            print(f"{func(data[target]):.2f}, ", end='')
+            print(f"{func(data1[target]):.2f}, ", end='')
         else:
-            print(f"{func(data[target]):.2f}")
+            print(f"{func(data1[target]):.2f}")
 
 
